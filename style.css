@@ -1,0 +1,77 @@
+html, body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(159, 223, 201);
+    justify-content: center;
+    align-items: center;
+}
+.calcBody {
+    display: flex;
+    background-color: gray;
+    display: flex;
+    height: 65%;
+    width: 30%;
+    border-radius: 20px;
+    border: 3px solid black;
+    padding: 6px;
+}
+.calcHeader {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 6px;
+    gap: 6px
+}
+.resultBox {
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    flex:.3;
+}
+.resultBox div {
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid black;
+}
+#result {
+
+}
+.calcNumbers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex:1;
+    gap:6px;
+}
+.calcNumbers div {
+    display: flex;
+    flex-grow:1;
+    width:100%;
+    gap:6px;
+}
+.calcNumbers div button{
+    flex-grow: 1;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    flex-grow: .33;
+    padding: 6px;
+}
+.opButtons {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    gap:6px;
+}
+.opButtons button {
+    flex:1;
+}
+#spacer{
+    flex-grow:.312;
+}
