@@ -25,20 +25,21 @@ html, body {
 }
 .resultBox {
     display: flex;
+    box-sizing: border-box;
+    border: 5px black solid;
     background-color: white;
+    flex-direction: column;
     border-radius: 12px;
     flex:.3;
 }
 .resultBox div {
     border-radius: 12px;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 10px solid black;
+    flex: 1;
+    padding: 12px;
 }
 #result {
-
+    flex: .3;
 }
 .calcNumbers {
     display: flex;
@@ -55,8 +56,12 @@ html, body {
 }
 .calcNumbers div button{
     flex-grow: 1;
+    border-radius: 12px;
+    border: solid black 2px;
 }
-
+#c {
+    flex-grow: .36;
+}
 .operators {
     display: flex;
     flex-direction: column;
@@ -71,7 +76,10 @@ html, body {
 }
 .opButtons button {
     flex:1;
+    border-radius: 12px;
+    border: solid black 2px;
+    
 }
 #spacer{
-    flex-grow:.312;
+    flex-grow:.337;
 }
