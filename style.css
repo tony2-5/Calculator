@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'calculator-font';
+    src: url('./font/Technology.ttf');
+}
 html, body {
     display: flex;
     height: 100vh;
@@ -19,7 +23,7 @@ html, body {
 .calcHeader {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1 1 100%;
     padding: 6px;
     gap: 6px
 }
@@ -38,8 +42,19 @@ html, body {
     flex: 1;
     padding: 12px;
 }
+#numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-family: 'calculator-font';
+}
 #result {
     flex: .3;
+    align-self: flex-end;
+    padding-right: 20px;
+    font-size: 36px;
+    font-family: 'calculator-font';
 }
 .calcNumbers {
     display: flex;
@@ -65,7 +80,7 @@ html, body {
 .operators {
     display: flex;
     flex-direction: column;
-    flex-grow: .33;
+    flex: 1 1 30%;
     padding: 6px;
 }
 .opButtons {
