@@ -14,8 +14,8 @@ html, body {
     display: flex;
     background-color: gray;
     display: flex;
-    height: 65%;
-    width: 30%;
+    height: 50vh;
+    aspect-ratio: 5/6;
     border-radius: 20px;
     border: 3px solid black;
     padding: 6px;
@@ -33,44 +33,44 @@ html, body {
     border: 5px black solid;
     background-color: white;
     flex-direction: column;
-    border-radius: 12px;
-    flex:.3;
+    border-radius: 6px;
+    flex:0 1 31%;
 }
 .resultBox div {
     border-radius: 12px;
     display: flex;
     flex: 1;
-    padding: 12px;
+    padding: 6px;
 }
 #numbers {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: 3.5vh;
     font-family: 'calculator-font';
 }
 #result {
     flex: .3;
     align-self: flex-end;
     padding-right: 20px;
-    font-size: 36px;
+    font-size: 2.5vh;
     font-family: 'calculator-font';
 }
 .calcNumbers {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex:1;
+    flex:1 1 100%;
     gap:6px;
 }
 .calcNumbers div {
     display: flex;
-    flex-grow:1;
+    flex:1;
     width:100%;
     gap:6px;
 }
 .calcNumbers div button{
-    flex-grow: 1;
+    flex:1;
     border-radius: 12px;
     border: solid black 2px;
 }

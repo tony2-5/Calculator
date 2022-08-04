@@ -2,6 +2,9 @@
 var arr = [];
 var check = 0;
 const OPERATORS = "+-*/"
+const NUMBERS = "0123456789";
+document.getElementById('numbers').innerHTML = "";
+document.getElementById("result").innerHTML = "";
 // operation functions
 function add(num1, num2) {
     // if user keeps using operators without pressing equals
@@ -62,7 +65,7 @@ function clear() {
 document.querySelector(".calcNumbers").addEventListener('click', (e) => {
     if(e.target.innerHTML == "Clear") {
         clear();
-    }else {
+    }else if(NUMBERS.includes(e.target.innerHTML)) {
         // concatenates user number input until and operator is selected
         if(document.getElementById('numbers').innerHTML.length < 16) document.getElementById('numbers').innerHTML = document.getElementById('numbers').innerHTML.concat('', e.target.innerHTML);
     }
