@@ -73,6 +73,7 @@ html, body {
     flex:1;
     border-radius: 12px;
     border: solid black 2px;
+    font-size: 2vh;
 }
 #c {
     flex-grow: .36;
@@ -93,7 +94,7 @@ html, body {
     flex:1;
     border-radius: 12px;
     border: solid black 2px;
-    
+    font-size: 2vh;
 }
 #spacer{
     flex-grow:.337;
